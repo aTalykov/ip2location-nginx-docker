@@ -7,7 +7,7 @@ on:
       - ./*
 
 jobs:
-  publish-base-php-image:
+  publish-base-nginx-image:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,7 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GH_PAT }}
 
-    - name: Build the base-php Docker image
+    - name: Build the base-nginx Docker image
       run: |
         docker build ./ --tag ghcr.io/aTalykov/ip2location-nginx-docker/nginx-ip2location:latest
         docker push ghcr.io/aTalykov/ip2location-nginx-docker/nginx-ip2location:latest
