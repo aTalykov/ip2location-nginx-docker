@@ -22,5 +22,5 @@ jobs:
 
     - name: Build the base-nginx Docker image
       run: |
-        docker build ./deployment/nginx/ --tag ghcr.io/aTalykov/ip2location-nginx-docker/nginx-ip2location:latest
-        docker push ghcr.io/aTalykov/ip2location-nginx-docker/nginx-ip2location:latest
+        docker build ./deployment/nginx/ --tag ghcr.io/atalykov/ip2location-nginx-docker/nginx-ip2location:latest
+        docker push ghcr.io/atalykov/ip2location-nginx-docker/nginx-ip2location:latest
