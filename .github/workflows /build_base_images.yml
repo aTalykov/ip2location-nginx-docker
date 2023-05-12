@@ -22,5 +22,5 @@ jobs:
 
     - name: Build the base-php Docker image
       run: |
-        docker build ./base.Dockerfile --tag ghcr.io/aTalykov/ip2location-nginx-docker/nginx-ip2location:latest
+        docker build ./ --tag ghcr.io/aTalykov/ip2location-nginx-docker/nginx-ip2location:latest
         docker push ghcr.io/aTalykov/ip2location-nginx-docker/nginx-ip2location:latest
