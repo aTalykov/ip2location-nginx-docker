@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - .github/workflows/build_base_images.yml
+      - ./*
 
 jobs:
   publish-base-php-image:
